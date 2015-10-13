@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     
+    <script src="jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key = "JhoU+Cv8Ipm7fcSZKycXhX71c55TzKDoLUda4Q==";</script>
+
+</head>
+<body>
+    
+    <div id="myElement1">Loading the player...</div>
+
+<script type="text/javascript">
+    jwplayer("myElement1").setup({
+        listbar: {
+            position: 'right',
+            size: 320
+        },
+        width: 960,
+        playlist: "http://localhost:4918/Plugins/jwplayer/XMLFile1.rss"
+
+    });
+</script>
+
+</body>
+</html>
