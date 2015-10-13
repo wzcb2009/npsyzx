@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.SystemCase,Model" table="SystemCase" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="int" name="ParentId" column="[ParentId]" />
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="string" length="250" name="CaseName" column="[CaseName]" />
+    <property type="DateTime" name="PubDate" column="[PubDate]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="Boolean" name="IsShowFlag" column="[isShowFlag]" />
+    <property type="string" length="4000" name="CaseData" column="[CaseData]" />
+    <property type="int" name="CaseDataTypeid" column="[CaseDataTypeID]" />
+    <property type="int" name="TypeId" column="[TypeId]" />
+    <property type="int" name="UnitId" column="[UnitId]" />
+  </class>
+</hibernate-mapping>

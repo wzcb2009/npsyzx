@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.LabExpAssetsConfig,Model" table="LabExpAssetsConfig" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="LabId" column="[LabId]" />
+    <property type="int" name="AssetCaseId" column="[AssetCaseId]" />
+    <property type="string" length="50" name="Title" column="[Title]" />
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="int" name="Num" column="[Num]" />
+    <property type="string" length="50" name="UnitName" column="[UnitName]" />
+    <property type="string" length="50" name="Manager" column="[Manager]" />
+    <property type="int" name="Location" column="[Location]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.SystemInfoParam,Model" table="System_Info_Param" lazy="true">
+    <id name="Id" column="id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="string" length="200" name="Schoolname" column="[schoolname]" />
+    <property type="string" length="200" name="Address" column="[Address]" />
+    <property type="string" length="50" name="Contact" column="[Contact]" />
+    <property type="string" length="50" name="Icp" column="[Icp]" />
+    <property type="string" length="1073741823" name="Content" column="[Content]" />
+    <property type="DateTime" name="Pubdate" column="[pubdate]" />
+    <property type="string" length="50" name="Uploadpath" column="[uploadpath]" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.LabExperiment,Model" table="LabExperiment" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="int" name="SubjectId" column="[SubjectId]" />
+    <property type="int" name="GradeId" column="[GradeId]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+    <property type="Boolean" name="Status" column="[Status]" />
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="string" length="250" name="Title" column="[Title]" />
+    <property type="string" length="1073741823" name="Remark" column="[Remark]" />
+    <property type="string" length="250" name="PicUrl" column="[PicUrl]" />
+  </class>
+</hibernate-mapping>

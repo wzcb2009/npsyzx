@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{770520E8-98AD-462D-9D36-7B2AF24C8AC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Active.cs" />
+    <Compile Include="Entities\ActiveAnalyze.cs" />
+    <Compile Include="Entities\ActiveArea.cs" />
+    <Compile Include="Entities\ActiveCaseSet.cs" />
+    <Compile Include="Entities\ActiveCompare.cs" />
+    <Compile Include="Entities\ActiveePortAwardTotal.cs" />
+    <Compile Include="Entities\ActiveGroup.cs" />
+    <Compile Include="Entities\ActiveMarksTotal.cs" />
+    <Compile Include="Entities\Assets.cs" />
+    <Compile Include="Entities\AssetsApply.cs" />
+    <Compile Include="Entities\AssetsCaseUser.cs" />
+    <Compile Include="Entities\BlogInfo.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\CourseInfo.cs" />
+    <Compile Include="Entities\DataMain.cs" />
+    <Compile Include="Entities\DataMainCaseSet.cs" />
+    <Compile Include="Entities\EPortAward.cs" />
+    <Compile Include="Entities\EventList.cs" />
+    <Compile Include="Entities\EventUser.cs" />
+    <Compile Include="Entities\FileList.cs" />
+    <Compile Include="Entities\GuestBook.cs" />
+    <Compile Include="Entities\InvsetResult.cs" />
+    <Compile Include="Entities\LabApply.cs" />
+    <Compile Include="Entities\LabExpAssetsConfig.cs" />
+    <Compile Include="Entities\LabExperiment.cs" />
+    <Compile Include="Entities\Printer.cs" />
+    <Compile Include="Entities\RoomInfo.cs" />
+    <Compile Include="Entities\RoomOrder.cs" />
+    <Compile Include="Entities\SystemCase.cs" />
+    <Compile Include="Entities\SystemInfoParam.cs" />
+    <Compile Include="Entities\Template.cs" />
+    <Compile Include="Entities\UserBaseInfo.cs" />
+    <Compile Include="Entities\UserClassSubject.cs" />
+    <Compile Include="Entities\UserClassSubjectData.cs" />
+    <Compile Include="Entities\Userlist.cs" />
+    <Compile Include="Entities\UserSystemCase.cs" />
+    <Compile Include="Entities\UserViewList.cs" />
+    <Compile Include="Entities\ViewDataMain.cs" />
+    <Compile Include="Entities\ViewThClassSubjectExam.cs" />
+    <Compile Include="Entities\WorkApply.cs" />
+    <Compile Include="Entities\WorkUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mappings\Active.hbm.xml" />
+    <Content Include="Mappings\ActiveCompare.hbm.xml" />
+    <Content Include="Mappings\ActiveePortAwardTotal.hbm.xml" />
+    <Content Include="Mappings\ActiveGroup.hbm.xml" />
+    <Content Include="Mappings\ActiveMarksTotal.hbm.xml" />
+    <Content Include="Mappings\Comment.hbm.xml" />
+    <Content Include="Mappings\DataMain.hbm.xml" />
+    <Content Include="Mappings\EportAward.hbm.xml" />
+    <Content Include="Mappings\EventList.hbm.xml" />
+    <Content Include="Mappings\EventUser.hbm.xml" />
+    <Content Include="Mappings\FileList.hbm.xml" />
+    <Content Include="Mappings\GuestBook.hbm.xml" />
+    <Content Include="Mappings\InvsetResult.hbm.xml" />
+    <Content Include="Mappings\LabExpAssetsConfig.hbm.xml" />
+    <Content Include="Mappings\LabExperiment.hbm.xml" />
+    <Content Include="Mappings\SystemCase.hbm.xml" />
+    <Content Include="Mappings\SystemInfoParam.hbm.xml" />
+    <Content Include="Mappings\UserBaseInfo.hbm.xml" />
+    <Content Include="Mappings\UserClassSubject.hbm.xml" />
+    <Content Include="Mappings\UserEvent.hbm.xml" />
+    <Content Include="Mappings\UserFamily.hbm.xml" />
+    <Content Include="Mappings\Userlist.hbm.xml" />
+    <Content Include="Mappings\UserSystemCase.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

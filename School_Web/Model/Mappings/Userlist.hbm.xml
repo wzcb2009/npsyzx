@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.Userlist,Model" table="Userlist" lazy="true">
+    <id name="UserId" column="UserId" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="GradeId" column="[GradeId]" />
+    <property type="int" name="ClassId" column="[ClassId]" />
+    <property type="int" name="RoleId" column="[RoleId]" />
+    <property type="string" length="50" name="UserName" column="[UserName]" />
+    <property type="string" length="50" name="Truename" column="[Truename]" />
+    <property type="string" length="50" name="TruenameEn" column="[TruenameEn]" />
+    <property type="string" length="50" name="Pwd" column="[Pwd]" />
+    <property type="DateTime" name="LastLogin" column="[LastLogin]" />
+    <property type="DateTime" name="PubDate" column="[PubDate]" />
+    <property type="string" length="50" name="LocalIp" column="[LocalIp]" />
+    <property type="int" name="LoginTimes" column="[LoginTimes]" />
+    <property type="string" length="50" name="OtherGuid" column="[OtherGuID]" />
+    <property type="Boolean" name="State" column="[State]" />
+    <property type="string" length="50" name="Sex" column="[Sex]" />
+    <property type="string" length="250" name="FaceUrl" column="[FaceUrl]" />
+    <property type="string" length="50" name="Tel" column="[Tel]" />
+    <property type="string" length="50" name="Qq" column="[QQ]" />
+    <property type="string" length="50" name="Qqwx" column="[QQWX]" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.UserSystemCase,Model" table="User_SystemCase" lazy="true">
+    <id name="Id" column="id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="UnitId" column="[UnitId]" />
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="int" name="Parentid" column="[ParentId]" />
+    <property type="Boolean" name="IsAdmin" column="[IsAdmin]" />
+  </class>
+</hibernate-mapping>

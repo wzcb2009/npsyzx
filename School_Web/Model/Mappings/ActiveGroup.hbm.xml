@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.ActiveGroup,Model" table="ActiveGroup" lazy="true">
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="ActiveId" column="[ActiveId]" />
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="int" name="GradeId" column="[GradeId]" />
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="string" length="50" name="Title" column="[Title]" />
+    <property type="int" name="UserCount" column="[UserCount]" />
+    <property type="int" name="AdminUserId" column="[AdminUserId]" />
+    <property type="int" name="CheckUserId" column="[CheckUserId]" />
+    <property type="Boolean" name="Status" column="[Status]" />
+    <property type="Boolean" name="SexFlag" column="[SexFlag]" />
+    <property type="int" name="Sex" column="[Sex]" />
+  </class>
+</hibernate-mapping>

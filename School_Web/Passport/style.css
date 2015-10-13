@@ -1,0 +1,109 @@
+﻿body, input, select, button {
+    font-family: verdana;
+}
+body {
+    color: #000000;
+    font-size: 12px;
+    line-height: 166.6%;
+    text-align: center;
+}
+.header {
+    height: 64px;
+    margin: 0 auto;
+   overflow: hidden; 
+     position: relative; 
+    width: 1000px;
+    z-index: 9000;
+}
+
+.headerLogo {
+    left: 50px;
+   
+}
+
+.headerIntro {
+    background-position: 0 -64px;
+    display: block;
+    height: 28px;
+    left: 194px;
+    top: 17px;
+    width: 144px;
+}
+
+.headerNav {
+    color: #CFD0D0;
+    right: 50px;
+    text-align: right;
+    top: 21px;
+    width: 400px;
+}
+.headerLogo, .headerIntro, .headerNav, #headerEff, .footerLogo, .footerNav, .loginIcoCurrent, .loginIcoNew, .loginFormTh, .loginFormTdIpt, .domain, #loginFormSelect, #whatAutologinTip, #mobtips, #mobtips_arr, #mobtips_close {
+    position: absolute;
+}
+a {
+    color: #959595;
+    text-decoration: none;
+}
+.themeCtrl a, .loginFormIpt, .headerIntro, .loginIcoCurrent, .loginIcoNew, .themeText li, .domain, .whatAutologin, .btn, .dialogbox .hd .rc, .dialogbox .hd, .btn-moblogin, .btn-moblogin2, .ico, .locationTestTitle, .verSelected, .servSelected, .locationTestTitleClose, .ext-4free, #extText li, #extMobLogin li, #mobtips_arr, #mobtips_close {
+    background-image: url("http://mimg.127.net/index/163/img/2013/bg_v1.png");
+}
+body {
+    color: #000000;
+    font-size: 12px;
+    line-height: 166.6%;
+    text-align: center;
+}
+
+.login {
+    margin-top:50px;
+    background: url("images/login_bg.jpg") no-repeat scroll 0 0 ;
+    height: 270px;
+    left: 50%;
+    margin-left: 91px;
+    padding: 14px 16px 15px;
+    position: absolute;
+    text-align: left;
+    top: 85px;
+    width: 280px;
+    z-index: 2;
+     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+.login .content {
+    margin-top:68px;
+}
+.login .content .item{
+    margin-left:50px;
+    line-height:73px;
+    height:73px;
+    vertical-align:middle;
+}
+.login .content .item input{
+    border:none;
+    background-color:transparent;
+}
+
+.footer {
+    height: 65px;
+    margin: 0 auto;
+}
+
+.footer-inner {
+    color: #848585;
+    height: 63px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    width: 1000px;
+}
+
+.footerNav {
+    right: 123px;
+    top: 25px;
+}
+.footerNav a {
+    margin-left: 12px;
+}
+
+.copyright {
+    margin-left: 12px;
+}

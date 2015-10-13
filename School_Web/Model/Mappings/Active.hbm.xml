@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.Active,Model" table="Active" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="string" length="50" name="OrderCode" column="[OrderCode]" />
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="int" name="TypeId" column="[TypeId]" />
+    <property type="int" name="ParentId" column="[ParentId]" />
+    <property type="int" name="Termid" column="[TermID]" />
+    <property type="int" name="GroupId" column="[GroupId]" />
+    <property type="string" length="250" name="Title" column="[Title]" />
+    <property type="string" length="1073741823" name="Remark" column="[Remark]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="string" length="500" name="CaseIdlist" column="[CaseIdlist]" />
+    <property type="DateTime" name="StartDate" column="[StartDate]" />
+    <property type="DateTime" name="EndDate" column="[EndDate]" />
+    <property type="int" name="LessonPindex" column="[LessonPindex]" />
+    <property type="Boolean" name="Status" column="[Status]" />
+    <property type="string" length="250" name="PicUrl" column="[PicUrl]" />
+  </class>
+</hibernate-mapping>

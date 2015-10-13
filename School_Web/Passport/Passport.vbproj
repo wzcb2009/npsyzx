@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{DBA8A3DA-D378-4C3F-B0F7-F895EB936C48}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Passport</RootNamespace>
+    <AssemblyName>Passport</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Passport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Passport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\bootstrap.1.4.0.css" />
+    <Content Include="bootstrap\bootstrap.min.css" />
+    <Content Include="bootstrap\css\bootstrap-ie6.css" />
+    <Content Include="bootstrap\css\bootstrap-ie6.min.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\ie.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-8.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap-affix.js" />
+    <Content Include="bootstrap\js\bootstrap-alert.js" />
+    <Content Include="bootstrap\js\bootstrap-alerts.js" />
+    <Content Include="bootstrap\js\bootstrap-button.js" />
+    <Content Include="bootstrap\js\bootstrap-buttons.js" />
+    <Content Include="bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="bootstrap\js\bootstrap-modal.js" />
+    <Content Include="bootstrap\js\bootstrap-popover.js" />
+    <Content Include="bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="bootstrap\js\bootstrap-tab.js" />
+    <Content Include="bootstrap\js\bootstrap-tabs.js" />
+    <Content Include="bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="bootstrap\js\bootstrap-transition.js" />
+    <Content Include="bootstrap\js\bootstrap-twipsy.js" />
+    <Content Include="bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\tests\index.html" />
+    <Content Include="bootstrap\js\tests\phantom.js" />
+    <Content Include="bootstrap\js\tests\server.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-alerts.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-button.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-buttons.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-tabs.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-twipsy.js" />
+    <Content Include="bootstrap\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="bootstrap\js\tests\vendor\jquery.js" />
+    <Content Include="bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="bootstrap\less-ie6\tests\buttons.html" />
+    <Content Include="bootstrap\less-ie6\tests\css-tests.css" />
+    <Content Include="bootstrap\less-ie6\tests\css-tests.html" />
+    <Content Include="bootstrap\less-ie6\tests\forms-responsive.html" />
+    <Content Include="bootstrap\less-ie6\tests\forms.html" />
+    <Content Include="bootstrap\less-ie6\tests\navbar-fixed-top.html" />
+    <Content Include="bootstrap\less-ie6\tests\navbar-static-top.html" />
+    <Content Include="bootstrap\less-ie6\tests\navbar.html" />
+    <Content Include="bootstrap\less\tests\buttons.html" />
+    <Content Include="bootstrap\less\tests\css-tests.css" />
+    <Content Include="bootstrap\less\tests\css-tests.html" />
+    <Content Include="bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="bootstrap\less\tests\forms.html" />
+    <Content Include="bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="bootstrap\less\tests\navbar.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="GetToken.aspx" />
+    <Content Include="GUID.aspx" />
+    <Content Include="jquery.kinMaxShow-1.0.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="style.css" />
+    <Content Include="TokenService.asmx" />
+    <Content Include="userService.asmx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\CacheManager.vb" />
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetToken.aspx.designer.vb">
+      <DependentUpon>GetToken.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetToken.aspx.vb">
+      <DependentUpon>GetToken.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUID.aspx.designer.vb">
+      <DependentUpon>GUID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUID.aspx.vb">
+      <DependentUpon>GUID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TokenService.asmx.vb">
+      <DependentUpon>TokenService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="userService.asmx.vb">
+      <DependentUpon>userService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap\.travis.yml" />
+    <None Include="bootstrap\component.json" />
+    <None Include="bootstrap\CONTRIBUTING.md" />
+    <None Include="bootstrap\js\.jshintrc" />
+    <None Include="bootstrap\less-ie6\accordion.less" />
+    <None Include="bootstrap\less-ie6\alerts.less" />
+    <None Include="bootstrap\less-ie6\bootstrap-ie6.less" />
+    <None Include="bootstrap\less-ie6\breadcrumbs.less" />
+    <None Include="bootstrap\less-ie6\button-groups.less" />
+    <None Include="bootstrap\less-ie6\buttons.less" />
+    <None Include="bootstrap\less-ie6\carousel.less" />
+    <None Include="bootstrap\less-ie6\close.less" />
+    <None Include="bootstrap\less-ie6\code.less" />
+    <None Include="bootstrap\less-ie6\component-animations.less" />
+    <None Include="bootstrap\less-ie6\dropdowns.less" />
+    <None Include="bootstrap\less-ie6\forms.less" />
+    <None Include="bootstrap\less-ie6\grid.less" />
+    <None Include="bootstrap\less-ie6\hero-unit.less" />
+    <None Include="bootstrap\less-ie6\labels-badges.less" />
+    <None Include="bootstrap\less-ie6\layouts.less" />
+    <None Include="bootstrap\less-ie6\media.less" />
+    <None Include="bootstrap\less-ie6\mixins.less" />
+    <None Include="bootstrap\less-ie6\modals.less" />
+    <None Include="bootstrap\less-ie6\navbar.less" />
+    <None Include="bootstrap\less-ie6\navs.less" />
+    <None Include="bootstrap\less-ie6\pager.less" />
+    <None Include="bootstrap\less-ie6\pagination.less" />
+    <None Include="bootstrap\less-ie6\popovers.less" />
+    <None Include="bootstrap\less-ie6\progress-bars.less" />
+    <None Include="bootstrap\less-ie6\reset.less" />
+    <None Include="bootstrap\less-ie6\responsive-1200px-min.less" />
+    <None Include="bootstrap\less-ie6\responsive-767px-max.less" />
+    <None Include="bootstrap\less-ie6\responsive-768px-979px.less" />
+    <None Include="bootstrap\less-ie6\responsive-navbar.less" />
+    <None Include="bootstrap\less-ie6\responsive-utilities.less" />
+    <None Include="bootstrap\less-ie6\responsive.less" />
+    <None Include="bootstrap\less-ie6\scaffolding.less" />
+    <None Include="bootstrap\less-ie6\sprites.less" />
+    <None Include="bootstrap\less-ie6\tables.less" />
+    <None Include="bootstrap\less-ie6\thumbnails.less" />
+    <None Include="bootstrap\less-ie6\tooltip.less" />
+    <None Include="bootstrap\less-ie6\type.less" />
+    <None Include="bootstrap\less-ie6\utilities.less" />
+    <None Include="bootstrap\less-ie6\variables.less" />
+    <None Include="bootstrap\less-ie6\wells.less" />
+    <None Include="bootstrap\less\accordion.less" />
+    <None Include="bootstrap\less\alerts.less" />
+    <None Include="bootstrap\less\bootstrap.less" />
+    <None Include="bootstrap\less\breadcrumbs.less" />
+    <None Include="bootstrap\less\button-groups.less" />
+    <None Include="bootstrap\less\buttons.less" />
+    <None Include="bootstrap\less\carousel.less" />
+    <None Include="bootstrap\less\close.less" />
+    <None Include="bootstrap\less\code.less" />
+    <None Include="bootstrap\less\component-animations.less" />
+    <None Include="bootstrap\less\dropdowns.less" />
+    <None Include="bootstrap\less\forms.less" />
+    <None Include="bootstrap\less\grid.less" />
+    <None Include="bootstrap\less\hero-unit.less" />
+    <None Include="bootstrap\less\labels-badges.less" />
+    <None Include="bootstrap\less\layouts.less" />
+    <None Include="bootstrap\less\media.less" />
+    <None Include="bootstrap\less\mixins.less" />
+    <None Include="bootstrap\less\modals.less" />
+    <None Include="bootstrap\less\navbar.less" />
+    <None Include="bootstrap\less\navs.less" />
+    <None Include="bootstrap\less\pager.less" />
+    <None Include="bootstrap\less\pagination.less" />
+    <None Include="bootstrap\less\popovers.less" />
+    <None Include="bootstrap\less\progress-bars.less" />
+    <None Include="bootstrap\less\reset.less" />
+    <None Include="bootstrap\less\responsive-1200px-min.less" />
+    <None Include="bootstrap\less\responsive-767px-max.less" />
+    <None Include="bootstrap\less\responsive-768px-979px.less" />
+    <None Include="bootstrap\less\responsive-navbar.less" />
+    <None Include="bootstrap\less\responsive-utilities.less" />
+    <None Include="bootstrap\less\responsive.less" />
+    <None Include="bootstrap\less\scaffolding.less" />
+    <None Include="bootstrap\less\sprites.less" />
+    <None Include="bootstrap\less\tables.less" />
+    <None Include="bootstrap\less\thumbnails.less" />
+    <None Include="bootstrap\less\tooltip.less" />
+    <None Include="bootstrap\less\type.less" />
+    <None Include="bootstrap\less\utilities.less" />
+    <None Include="bootstrap\less\variables.less" />
+    <None Include="bootstrap\less\wells.less" />
+    <None Include="bootstrap\LICENSE" />
+    <None Include="bootstrap\Makefile" />
+    <None Include="bootstrap\package.json" />
+    <None Include="bootstrap\README.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{B2F1038F-97D4-45AC-B64C-92AD5876AF29}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{69640618-6A29-42B7-B52B-1325DAF84588}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{770520E8-98AD-462D-9D36-7B2AF24C8AC1}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringHandling\StringHandling.csproj">
+      <Project>{F7635B6B-2C1A-4093-AB32-3733C7A30028}</Project>
+      <Name>StringHandling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/passport/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.EventUser,Model" table="EventUser" lazy="true">
+    <id name="EventUserid" column="EventUserID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="Eventid" column="[EventID]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="int" name="EventCaseid" column="[EventCaseID]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+    <property type="int" name="CheckCaseId" column="[CheckCaseId]" />
+    <property type="string" length="250" name="Remark" column="[Remark]" />
+  </class>
+</hibernate-mapping>

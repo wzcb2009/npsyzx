@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.EportAward,Model" table="ePortAward" lazy="true">
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="ActiveId" column="[ActiveId]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="string" length="50" name="Truename" column="[Truename]" />
+    <property type="string" length="250" name="Title" column="[Title]" />
+    <property type="int" name="YearNum" column="[YearNum]" />
+    <property type="int" name="TermId" column="[TermId]" />
+    <property type="int" name="GradeCaseId" column="[GradeCaseId]" />
+    <property type="int" name="LevelCaseId" column="[LevelCaseId]" />
+    <property type="int" name="Caseid" column="[Caseid]" />
+    <property type="int" name="ParentCaseid" column="[ParentCaseid]" />
+    <property type="string" length="250" name="FilePath" column="[FilePath]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+    <property type="Boolean" name="UserChecked" column="[UserChecked]" />
+    <property type="double" name="Cent" column="[Cent]" />
+    <property type="double" name="Credit" column="[Credit]" />
+    <property type="string" length="250" name="Remark" column="[Remark]" />
+    <property type="Decimal" name="MoneyNum" column="[MoneyNum]" />
+    <property type="Boolean" name="AdminChecked" column="[AdminChecked]" />
+    <property type="int" name="SortIndex" column="[SortIndex]" />
+    <property type="int" name="Pindex" column="[Pindex]" />
+    <property type="int" name="DepartmentId" column="[DepartmentId]" />
+    <property type="int" name="GradeId" column="[GradeId]" />
+    <property type="int" name="GroupId" column="[GroupId]" />
+    <property type="Boolean" name="ObjectFlag" column="[ObjectFlag]" />
+  </class>
+</hibernate-mapping>

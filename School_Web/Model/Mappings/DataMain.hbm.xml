@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.DataMain,Model" table="Data_Main" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="ZyTypeid" column="[ZyTypeid]" />
+    <property type="int" name="ParentId" column="[ParentId]" />
+    <property type="int" name="Userid" column="[UserID]" />
+    <property type="int" name="UnitId" column="[UnitId]" />
+    <property type="int" name="Caseid" column="[CaseID]" />
+    <property type="int" name="Pindex" column="[PIndex]" />
+    <property type="int" name="BrowCount" column="[BrowCount]" />
+    <property type="Boolean" name="Status" column="[Status]" />
+    <property type="Boolean" name="Cmd" column="[Cmd]" />
+    <property type="Boolean" name="UserRight" column="[UserRight]" />
+    <property type="string" length="250" name="Author" column="[Author]" />
+    <property type="DateTime" name="PubDate" column="[PubDate]" />
+    <property type="string" length="50" name="DocGetNum" column="[DocGetNum]" />
+    <property type="string" length="50" name="DocNum" column="[DocNum]" />
+    <property type="string" length="100" name="Title" column="[Title]" />
+    <property type="string" length="500" name="Remark" column="[Remark]" />
+    <property type="string" length="1073741823" name="Content" column="[Content]" />
+    <property type="double" name="Cent" column="[Cent]" />
+    <property type="DateTime" name="EndDate" column="[EndDate]" />
+    <property type="string" length="250" name="Caseids" column="[Caseids]" />
+  </class>
+</hibernate-mapping>

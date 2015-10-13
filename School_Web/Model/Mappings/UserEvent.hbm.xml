@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.UserEvent,Model" table="UserEvent" lazy="true">
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="YearNum" column="[YearNum]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="string" length="250" name="Title" column="[Title]" />
+    <property type="int" name="CaseId" column="[CaseId]" />
+    <property type="int" name="LevelId" column="[LevelId]" />
+    <property type="DateTime" name="StartDate" column="[StartDate]" />
+    <property type="DateTime" name="EndDate" column="[EndDate]" />
+    <property type="string" length="500" name="Remark" column="[Remark]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+    <property type="DateTime" name="CheckedDate" column="[CheckedDate]" />
+    <property type="string" length="50" name="CheckName" column="[CheckName]" />
+  </class>
+</hibernate-mapping>

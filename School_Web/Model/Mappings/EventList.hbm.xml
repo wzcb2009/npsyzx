@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.EventList,Model" table="EventList" lazy="true">
+    <id name="Id" column="ID" type="int">
+      <generator class="native" />
+    </id>
+    <property type="string" length="50" name="CodeNumber" column="[CodeNumber]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="int" name="Caseid" column="[CaseID]" />
+    <property type="int" name="UnitId" column="[UnitId]" />
+    <property type="int" name="LevelId" column="[LevelId]" />
+    <property type="int" name="Number" column="[Number]" />
+    <property type="double" name="Price" column="[Price]" />
+    <property type="string" length="50" name="Title" column="[Title]" />
+    <property type="string" length="50" name="TrueName" column="[TrueName]" />
+    <property type="string" length="50" name="Tel" column="[Tel]" />
+    <property type="DateTime" name="Pubdate" column="[Pubdate]" />
+    <property type="string" length="50" name="Address" column="[Address]" />
+    <property type="string" length="1073741823" name="Remak" column="[Remak]" />
+  </class>
+</hibernate-mapping>

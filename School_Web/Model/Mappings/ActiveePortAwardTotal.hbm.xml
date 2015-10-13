@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.ActiveePortAwardTotal,Model" table="ActiveePortAwardTotal" lazy="true">
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int" name="ActiveId" column="[ActiveId]" />
+    <property type="int" name="UserId" column="[UserId]" />
+    <property type="double" name="Total" column="[Total]" />
+    <property type="int" name="ClassSortIndex" column="[ClassSortIndex]" />
+    <property type="int" name="GradeSortIndex" column="[GradeSortIndex]" />
+  </class>
+</hibernate-mapping>
