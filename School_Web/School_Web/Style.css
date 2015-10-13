@@ -1,0 +1,300 @@
+﻿body {
+   
+    color: #333333;
+    font-family:'Microsoft YaHei',Tahoma,Helvetica,Arial,sans-serif;
+    line-height: 25px;
+    font-size:13px;
+     margin:0px;
+    padding:0px;
+ }
+form{
+    margin:0px;
+}
+li {
+    list-style:none;
+
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    background-color:#30609a;
+    
+     padding: 0px 0;
+    text-align: center;
+    height:65px;
+}
+    .footer p {
+        margin:0px;
+        color:#FFF;
+    
+    }
+.footer-links li:first-child {
+    padding-left: 0;
+}
+.footer-links li {
+    display: inline;
+    padding: 0 2px;
+}
+li {
+    line-height: 20px;
+}
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+.logo {
+    background-image:url(images/logo.jpg);
+    height:132px;
+
+}
+.hotbox {
+    height: 26px;
+ 
+
+
+
+}
+.boxborder {
+    border: 1px solid #CCCCCC;
+}
+    .hotbox span {
+    display:inline-block;
+    
+    }
+    .hotbox .title {
+    
+    margin-left:10px;
+    height:26px;
+    line-height:25px;
+    font-weight:bold;
+    display:block;
+    }
+        .hotbox .title img {
+        margin-right:10px;
+        }
+    .hotbox .more {
+    float:right;
+    margin-right:5px;
+    }
+.hotbox-line {
+height:5px;
+background-image:url(images/hot_box_bar_line.jpg);
+}
+.box {
+    height: 30px;
+     border-bottom: 1px solid #D4D4D4;
+ }
+    .box .title {
+     float:left;
+     height:30px;
+     line-height:30px;
+     width:80px;
+     margin-left:10px;
+     color:#006DCC;
+     font-weight:bold;
+     border-bottom:2px #006DCC solid; 
+     font-size:16px;
+
+    }
+    .box .more {
+       float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    width: 50px;
+    }
+.login .main {
+    height:150px;
+    background-image:url(images/login_bg.jpg);
+
+
+
+}
+.login .span3 {
+    width:120px;
+
+}
+.login .foot {
+height:6px;
+background-image:url(images/login_footer.jpg);
+}
+.login .header {
+    height:35px;
+    background-image:url(images/login_header.jpg);
+    font-family:微软雅黑;
+    font-size:14px;
+    text-align:center;
+
+
+}
+.form-horizontal .controls {
+     margin-left: 70px;
+}
+.form-horizontal .control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 60px;
+}
+.btn-large {
+  padding: 11px;
+}
+.link_bar {
+background-image:url(images/index_2_2_2_3_1.jpg);
+height:35px;
+    font-family:微软雅黑;
+    font-size:14px;
+    text-align:center;
+
+}
+.nav-header {
+    color: #999999;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px 15px 0px 15px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+.navbar{
+   margin-bottom:0px;
+}
+.well {
+      padding: 0px;
+}
+.newscontent {
+font-family: "微软雅黑",Arial;
+}
+.logobg {
+    background-image:url(images/logobg.jpg);
+    
+
+
+}
+.newslist {
+    padding: 3px;
+    
+}
+.newslist li {
+ height: 30px;
+    line-height: 30px;
+border-bottom:dashed 1px #E5E5E5;
+     overflow:hidden;
+     text-overflow:ellipsis;
+     white-space:nowrap;
+}
+    .newslist li * {
+        display:inline-block;
+
+    }
+    .newslist li a {
+    overflow:hidden ;
+    text-overflow: ellipsis;
+    display:block;
+  
+    }
+    .newslist li .info {
+    float:right;
+   
+    }
+.mulitline {
+height:325px;
+overflow:hidden;
+margin-top:10px;
+margin-left:5px;
+margin-bottom:10px;
+margin-right:5px;
+}
+
+.pages {
+    color: #999;
+    font-size: 14px;
+    margin: 10px;
+}
+
+    .pages a, .pages .cpb {
+        text-decoration: none;
+        float: left;
+        padding: 0 5px;
+        border: 1px solid #ddd;
+        background: #ffff;
+        margin: 0 2px;
+        font-size: 13px;
+        color: #000;
+        line-height: 25px;
+    }
+
+        .pages a:hover {
+            background-color: #E61636;
+            color: #fff;
+            border: 1px solid #E61636;
+            text-decoration: none;
+        }
+
+    .pages .cpb {
+        font-weight: bold;
+        color: #fff;
+        background: #E61636;
+        border: 1px solid #E61636;
+        line-height: 25px;
+    }
+    #scrollUp {
+  bottom: 20px;
+  right: 20px;
+  height: 38px;  /* Height of image */
+  width: 38px; /* Width of image */
+  background: url("images/top.png") no-repeat;
+}
+.mulitline .media {
+    padding-bottom: 5px;
+    padding-top:5px;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #C0C0C0;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color:#FFF;
+
+}
+.navbar .divider-vertical {
+    border-left: 1px solid #006DCC;
+    border-right: 1px solid #0044CC;
+    height: 40px;
+    margin: 0 9px;
+    border-right-color: #993300;
+    border-left-color: #FF5820;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #F6F6F6;
+    text-decoration: none;
+    background-color: transparent;
+}
+h4.divider {
+    border-bottom: 1px solid #EEEEEE;
+    border-bottom-color: #CCCCCC;
+    padding-bottom: 10px;
+}
+.nav-tabs > li > a {
+      line-height: 10px;
+    margin-top: 3px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover{
+       background-color: #ffffff;
+    border-bottom-color: transparent;
+    color: #555555;
+    cursor: default;
+    border-bottom:2px #006DCC solid;
+}
+.nav-tabs > li > a {
+    line-height: 20px;
+    margin-top: 3px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    height:20px;
+    font-size:16px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<title>jCarousel Examples</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!--
+  jQuery library
+-->
+<script type="text/javascript" src="../lib/jquery-1.4.2.min.js"></script>
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="../lib/jquery.jcarousel.min.js"></script>
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="../skins/tango/skin.css" />
+
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 2,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+
+</script>
+</head>
+<body>
+<div id="wrap">
+  <h1>jCarousel</h1>
+  <h2>Riding carousels with jQuery</h2>
+
+  <h3>Carousel with autoscrolling</h3>
+  <p>
+    Autoscrolling is enabled and the interval is set to <code>2</code> seconds.
+    Autoscrolling pauses when the user moves the cursor over the images and stops
+    when the user clicks the next or prev button. <code>wrap</code> is set to
+    <code>&quot;last&quot;</code>.
+  </p>
+
+  <ul id="mycarousel" class="jcarousel-skin-tango">
+          <li><a href='webshow.aspx?zid=107'><img src="UpResourceFile/20126221312521999.jpg" height="100" />20</a></li>
+<li><a href='webshow.aspx?zid=106'><img src="UpResourceFile/20126221312594102.jpg" height="100" />19</a></li>
+<li><a href='webshow.aspx?zid=105'><img src="UpResourceFile/201262213125101534.jpg" height="100" />18</a></li>
+<li><a href='webshow.aspx?zid=104'><img src="UpResourceFile/20126221312525554.jpg" height="100" />17</a></li>
+<li><a href='webshow.aspx?zid=103'><img src="UpResourceFile/201262213125103596.jpg" height="100" />16</a></li>
+<li><a href='webshow.aspx?zid=102'><img src="UpResourceFile/20126221312573569.jpg" height="100" />14(4)</a></li>
+<li><a href='webshow.aspx?zid=101'><img src="UpResourceFile/201262213124103848.jpg" height="100" />13</a></li>
+<li><a href='webshow.aspx?zid=100'><img src="UpResourceFile/20126221312493508.jpg" height="100" />12</a></li>
+<li><a href='webshow.aspx?zid=99'><img src="UpResourceFile/20126221312413343.jpg" height="100" />11</a></li>
+<li><a href='webshow.aspx?zid=98'><img src="UpResourceFile/20126221312221734.jpg" height="100" />10</a></li>
+<li><a href='webshow.aspx?zid=97'><img src="UpResourceFile/20126221312288875.jpg" height="100" />9</a></li>
+<li><a href='webshow.aspx?zid=96'><img src="UpResourceFile/20126221312199190.jpg" height="100" />8</a></li>
+<li><a href='webshow.aspx?zid=95'><img src="UpResourceFile/20126221312045912.jpg" height="100" />6</a></li>
+<li><a href='webshow.aspx?zid=94'><img src="UpResourceFile/20126221311935702.jpg" height="100" />5(3)</a></li>
+<li><a href='webshow.aspx?zid=93'><img src="UpResourceFile/20126221311742100.jpg" height="100" />3</a></li>
+<li><a href='webshow.aspx?zid=92'><img src="UpResourceFile/20126221311524580.jpg" height="100" />3(2)</a></li>
+<li><a href='webshow.aspx?zid=91'><img src="UpResourceFile/20126221311393295.jpg" height="100" />2(1)</a></li>
+  </ul>
+
+</div>
+</body>
+</html>

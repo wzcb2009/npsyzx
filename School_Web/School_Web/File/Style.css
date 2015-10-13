@@ -1,0 +1,99 @@
+﻿    .my-uploadify-button {
+        background: none;
+        border: none;
+        text-shadow: none;
+        border-radius: 0;
+    }
+
+    .uploadify:hover .my-uploadify-button {
+        background: none;
+        border: none;
+    }
+
+    .fileQueue {
+        width: 400px;
+        height: 150px;
+        overflow: auto;
+        border: 1px solid #E5E5E5;
+        margin-bottom: 10px;
+    }
+
+    ul.filelist li:hover {
+        background-color: #E5E5E5;
+    }
+
+    ul.filelist li {
+        height: 46px;
+        width: 360px;
+        border: solid 1px #E5E5E5;
+        margin: 3px;
+        list-style:none
+    }
+
+        ul.filelist li .ico {
+            float: left;
+            height: 40px;
+            width: 40px;
+            margin: 3px;
+        }
+
+        ul.filelist li .main a.title {
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+            vertical-align: middle;
+            height: 22px;
+            width: 300px;
+        }
+        ul.filelist  .main .view {
+         width:40px;
+         float:right;
+        }
+        ul.filelist li .main a.del {
+            display: block;
+            background-image: url(../file/images/del.png);
+            background-repeat: no-repeat;
+            float: right;
+            line-height: 22px;
+            vertical-align: middle;
+            height: 22px;
+            width: 20px;
+        }
+
+        ul.filelist li .info {
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+        }
+    ul.filelist li.clearbox {
+        clear:both;
+        height:0px;
+        border:none;
+    
+    }
+
+   .fileupload .left {
+        width:415px;
+        float:left;
+        
+    
+    }
+    .fileupload .line {
+     border-left:solid;
+        border-left-color:#cccccc;
+        border-left-width:1px;
+        height:31px;
+         float:left;
+         width:1px;
+   }
+       .fileupload .right {
+        width:400px;
+        float:left;
+       
+        
+    
+    }
+    .clearbox {
+        height: 0px;
+        clear: both;
+    }
