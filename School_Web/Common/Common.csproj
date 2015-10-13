@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69640618-6A29-42B7-B52B-1325DAF84588}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wzsckj.com.Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionEnum.cs" />
+    <Compile Include="ActionHelper.cs" />
+    <Compile Include="ActionPara.cs" />
+    <Compile Include="ActionParaSingle.cs" />
+    <Compile Include="BarCodeHelper.cs" />
+    <Compile Include="BindHelper.cs" />
+    <Compile Include="BrowserHelper.cs" />
+    <Compile Include="caiji.cs" />
+    <Compile Include="ChineseCode.cs" />
+    <Compile Include="ChineseCode2.cs" />
+    <Compile Include="CNPY.cs" />
+    <Compile Include="Code128Code.cs" />
+    <Compile Include="Code128Content.cs" />
+    <Compile Include="Code39.cs" />
+    <Compile Include="CodeSet.cs" />
+    <Compile Include="DynamicTHeaderHepler.cs" />
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="ExcelHelper2.cs" />
+    <Compile Include="Fabricate.cs" />
+    <Compile Include="FileDownHelper.cs" />
+    <Compile Include="FileExtension.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FileProperty.cs" />
+    <Compile Include="FileValidation.cs" />
+    <Compile Include="FormArea.cs" />
+    <Compile Include="GetImage.cs" />
+    <Compile Include="GridViewMergeCell.cs" />
+    <Compile Include="HrefInfo.cs" />
+    <Compile Include="ImageThumbnail.cs" />
+    <Compile Include="Img.cs" />
+    <Compile Include="JwPlayer.cs" />
+    <Compile Include="Mapper.cs" />
+    <Compile Include="Message\XmlHelper.cs" />
+    <Compile Include="OleDbHelper.cs" />
+    <Compile Include="OLEHelper.cs" />
+    <Compile Include="OrcaleHelper.cs" />
+    <Compile Include="PagerHelper.cs" />
+    <Compile Include="PagerInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSS.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlHelperParameterCache.cs" />
+    <Compile Include="StudentOrg.cs" />
+    <Compile Include="TemplateHelper.cs" />
+    <Compile Include="TimeParser.cs" />
+    <Compile Include="validatedCode.cs" />
+    <Compile Include="WebImagePackage\ImgCmpsFactory.cs" />
+    <Compile Include="WebImagePackage\ImgUtil.cs" />
+    <Compile Include="ZoomImageDemo\CutPhotoHelp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{770520E8-98AD-462D-9D36-7B2AF24C8AC1}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringHandling\StringHandling.csproj">
+      <Project>{F7635B6B-2C1A-4093-AB32-3733C7A30028}</Project>
+      <Name>StringHandling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
