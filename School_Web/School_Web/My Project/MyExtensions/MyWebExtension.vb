@@ -2,7 +2,7 @@
 
 Namespace My
     ''' <summary>
-    ''' 用于定义“My Web 命名空间”项目中的可用属性的模块。
+    ''' 用于定义 Web 项目的“My 命名空间”中可用属性的模块。
     ''' </summary>
     ''' <remarks></remarks>
     <Global.Microsoft.VisualBasic.HideModuleName()> _
@@ -11,7 +11,7 @@ Namespace My
         Private s_User As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.ApplicationServices.WebUser)
         Private s_Log As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.Logging.AspLog)
         ''' <summary>
-        ''' 返回有关主机计算机的信息。
+        ''' 返回有关主计算机的信息。
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         Friend ReadOnly Property Computer() As Global.Microsoft.VisualBasic.Devices.ServerComputer
@@ -20,7 +20,7 @@ Namespace My
             End Get
         End Property
         ''' <summary>
-        ''' 返回有关当前 Web 用户的信息。
+        ''' 返回当前 Web 用户的信息。
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         Friend ReadOnly Property User() As Global.Microsoft.VisualBasic.ApplicationServices.WebUser

@@ -1,1 +1,0 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" EnableViewStateMac="false"  CodeBehind="IndexLinkdo.aspx.vb" Inherits="Web.IndexLinkdo" %>
