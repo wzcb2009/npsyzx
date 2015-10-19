@@ -2195,10 +2195,10 @@
     <None Include="ueditor\third-party\video-js\font\vjs.svg" />
     <None Include="ueditor\third-party\video-js\font\vjs.ttf" />
     <None Include="ueditor\third-party\video-js\font\vjs.woff" />
-    <None Include="Web References\net.npsyzx.www\Reference.map">
+    <Content Include="Web References\net.npsyzx.www\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
-    </None>
+    </Content>
     <None Include="Web References\net.npsyzx.www\TokenService.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -3162,6 +3162,9 @@
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Web_net_npsyzx_www_TokenService</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
