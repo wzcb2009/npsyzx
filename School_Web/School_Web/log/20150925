@@ -1,0 +1,38 @@
+ ----------------------header-------------------------- 2015-09-25 14:50:44,171 [5] DEBUG Test -  dmview.infolist(107, 6, newsTitleLen)
+2015-09-25 14:50:44,762 [5] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 14:50:45,174 [5] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 14:50:45,605 [5] DEBUG Test -  dmview.infolist(178, , newsTitleLen)
+2015-09-25 14:50:46,009 [5] DEBUG Test -  dmview.infolist(114, newsTitleLen)
+2015-09-25 14:50:47,421 [5] DEBUG Test -   dmview.Picturelist(181, 8, 160, 0)
+2015-09-25 14:50:47,512 [5] DEBUG Test -  dmview.infolist(117, 9, newsTitleLen)
+2015-09-25 14:50:48,041 [5] DEBUG Test -  dmview.PicturelistHotFlash(107, 5, hotlisttitle, 340, 240)
+2015-09-25 14:50:48,222 [5] DEBUG Test -  dmview.infolist(498, 10, newsTitleLen)
+2015-09-25 14:50:48,335 [5] DEBUG Test - 结束
+2015-09-25 14:52:21,234 [11] DEBUG Test -  dmview.infolist(107, 6, newsTitleLen)
+2015-09-25 14:52:21,395 [11] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 14:52:21,572 [11] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 14:52:21,719 [11] DEBUG Test -  dmview.infolist(178, , newsTitleLen)
+2015-09-25 14:52:21,824 [11] DEBUG Test -  dmview.infolist(114, newsTitleLen)
+2015-09-25 14:52:22,405 [11] DEBUG Test -   dmview.Picturelist(181, 8, 160, 0)
+2015-09-25 14:52:22,441 [11] DEBUG Test -  dmview.infolist(117, 9, newsTitleLen)
+2015-09-25 14:52:22,839 [11] DEBUG Test -  dmview.PicturelistHotFlash(107, 5, hotlisttitle, 340, 240)
+2015-09-25 14:52:23,463 [11] DEBUG Test -  dmview.infolist(498, 10, newsTitleLen)
+2015-09-25 14:52:23,683 [11] DEBUG Test - 结束
+ ----------------------footer--------------------------  ----------------------header--------------------------  ----------------------footer--------------------------  ----------------------header-------------------------- 2015-09-25 15:52:05,000 [19] DEBUG Test -  dmview.infolist(107, 6, newsTitleLen)
+2015-09-25 15:52:05,761 [19] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 15:52:06,752 [19] DEBUG Test -  dmview.infolist(121, 6, newsTitleLen)
+2015-09-25 15:52:07,044 [19] DEBUG Test -  dmview.infolist(178, , newsTitleLen)
+2015-09-25 15:52:07,120 [19] DEBUG Test -  dmview.infolist(114, newsTitleLen)
+2015-09-25 15:52:07,468 [19] DEBUG Test -   dmview.Picturelist(181, 8, 160, 0)
+2015-09-25 15:52:07,524 [19] DEBUG Test -  dmview.infolist(117, 9, newsTitleLen)
+2015-09-25 15:52:07,643 [19] DEBUG Test -  dmview.PicturelistHotFlash(107, 5, hotlisttitle, 340, 240)
+2015-09-25 15:52:07,829 [19] DEBUG Test -  dmview.infolist(498, 10, newsTitleLen)
+2015-09-25 15:52:07,919 [19] DEBUG Test - 结束
+2015-09-25 15:52:07,920 [19] DEBUG Test - scView.WebMenu(scbll.Dt, 16, ")
+2015-09-25 15:52:08,062 [19] DEBUG Test -  dmview.InfoTopOne(113)
+2015-09-25 15:52:08,084 [19] DEBUG Test - 结束
+2015-09-25 15:52:08,086 [19] DEBUG Test - Footer
+2015-09-25 15:52:08,086 [19] DEBUG Test - BLL.SystemInfoParamBLL
+2015-09-25 15:52:08,086 [19] DEBUG Test - sysl.Rs(1)
+2015-09-25 15:52:08,089 [19] DEBUG Test - Literal1.Text 
+ ----------------------footer-------------------------- 
