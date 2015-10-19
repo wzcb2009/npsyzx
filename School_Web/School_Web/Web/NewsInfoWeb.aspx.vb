@@ -46,8 +46,9 @@ Public Class NewsAddWeb
         chk_cmd.Checked = dm.Cmd
         chk_Status.Checked = dm.Status
         chk_right.Checked = dm.UserRight
-        'lt_content.Text = dm.Content
+        lt_content.Text = dm.Content
         art_content = dm.Content
+        ' Me.content.Text = dm.Content
     End Sub
     Function files(parentid As Integer) As String
 

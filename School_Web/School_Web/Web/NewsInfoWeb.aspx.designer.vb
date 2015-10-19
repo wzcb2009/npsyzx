@@ -140,6 +140,15 @@ Partial Public Class NewsAddWeb
     Protected WithEvents xykx As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
+    '''lt_content 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents lt_content As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
     '''lt_fileinput 控件。
     '''</summary>
     '''<remarks>

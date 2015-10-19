@@ -87,7 +87,7 @@ Partial Class Web_NewsDo
         dm.BrowCount = Request.Form("txt_BrowCount")
         dm.Cmd = IIf(Request.Form("chk_Cmd") = "on", True, False)
         dm.UserRight = IIf(Request.Form("chk_right") = "on", True, False)
-        dm.Content = Request.Form("txt_Content")
+        dm.Content = Request.Form("Content")
         dm.Pindex = Request.Form("txt_Pindex")
         dm.Status = IIf(Request.Form("chk_Status") = "on", True, False)
         dm.Cent = IIf(Request.Form("txt_cent") = "", 0, Request.Form("txt_cent"))

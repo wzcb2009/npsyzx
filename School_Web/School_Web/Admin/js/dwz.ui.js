@@ -250,34 +250,61 @@ function initUI(_box) {
     //			$this.xheditor(op);
     //		});
     //	}
+
+    //kindeditor
     if ($.fn.xheditor) {
-        if ($("textarea.editor", $p).length > 0) {
-            var module = $("textarea.editor", $p).attr('module');
-            ueditor_loader[module] = {};
-            $("textarea.editor", $p).each(function (i) {
-                var $this = $(this);
-                var module = $this.attr('module');
-                var thisid = module + '_' + i;
-                $this.attr('id', thisid);
-                var uplink = $this.attr('upLink');
-                var session = $this.attr('session');
-                var ifheight = $this.attr('height') ? $this.attr('height') : 320;
-                //var thisname=$this.attr('name');
-                ueditor_loader[module][i] = new baidu.editor.ui.Editor({
-                    minFrameHeight: ifheight
-, imageUrl: uplink + 'image_upload'
-                    //,snapscreenServerUrl:uplink+'image_upload'
-, fileUrl: uplink + 'file_upload?' + session
-, catcherUrl: uplink + 'get_remote_image'
-, imageManagerUrl: uplink + 'image_manager'
-, wordImageUrl: uplink + 'image_upload'
-, getMovieUrl: uplink + 'get_movie'
-                    //,textarea:thisname
+        $("textarea.kindeditor", $p).each(function () {
+            $.getScript('../kindeditor/kindeditor-min.js', function () {
+                KindEditor.basePath = '../kindeditor/';
+                var editor = KindEditor.create('textarea[name="content"]', {
+                    uploadJson: '../kindeditor/asp.net/upload_json.ashx',
+                    fileManagerJson: '../kindeditor/asp.net/file_manager_json.ashx',
+                    allowFileManager: true,
+                    afterBlur: function () { editor.sync(); },
+                    afterCreate: function () {
+                        var self = this;
+                        KindEditor.ctrl(document, 13, function () {
+                            self.sync();
+                            K('form[name=form1]')[0].submit();
+                        });
+                        KindEditor.ctrl(self.edit.doc, 13, function () {
+                            self.sync();
+                            KindEditor('form[name=form1]')[0].submit();
+                        });
+                    }
                 });
-                ueditor_loader[module][i].render($this[0]);
             });
-        }
+        });
     }
+    //百度
+//    if ($.fn.xheditor) {
+//        if ($("textarea.editor", $p).length > 0) {
+//            var module = $("textarea.editor", $p).attr('module');
+//            ueditor_loader[module] = {};
+//            $("textarea.editor", $p).each(function (i) {
+//                var $this = $(this);
+//                var module = $this.attr('module');
+//                var thisid = module + '_' + i;
+//                $this.attr('id', thisid);
+//                var uplink = $this.attr('upLink');
+//                var session = $this.attr('session');
+//                var ifheight = $this.attr('height') ? $this.attr('height') : 320;
+//                //var thisname=$this.attr('name');
+//                ueditor_loader[module][i] = new baidu.editor.ui.Editor({
+//                    minFrameHeight: ifheight
+//, imageUrl: uplink + 'image_upload'
+//                    //,snapscreenServerUrl:uplink+'image_upload'
+//, fileUrl: uplink + 'file_upload?' + session
+//, catcherUrl: uplink + 'get_remote_image'
+//, imageManagerUrl: uplink + 'image_manager'
+//, wordImageUrl: uplink + 'image_upload'
+//, getMovieUrl: uplink + 'get_movie'
+//                    //,textarea:thisname
+//                });
+//                ueditor_loader[module][i].render($this[0]);
+//            });
+//        }
+//    }
 
     if ($.fn.uploadify) {
         $(":file[uploader]", $p).each(function () {
