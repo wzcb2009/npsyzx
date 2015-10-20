@@ -43,6 +43,8 @@
     <OutputPath>bin\</OutputPath>
     <DocumentationFile>Web.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -2270,6 +2272,7 @@
     <Content Include="Web\LinkListWeb.aspx" />
     <Content Include="Web\NewInfoWebEdit.aspx" />
     <Content Include="Web\NewsDo.aspx" />
+    <Content Include="Web\NewsDo_New.aspx" />
     <Content Include="Web\NewsInfoShow.aspx" />
     <Content Include="Web\NewsInfoWeb.aspx" />
     <Content Include="Web\NewsListDialogWeb.aspx" />
@@ -2897,6 +2900,13 @@
     <Compile Include="Web\NewsDo.aspx.vb">
       <DependentUpon>NewsDo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\NewsDo_New.aspx.designer.vb">
+      <DependentUpon>NewsDo_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\NewsDo_New.aspx.vb">
+      <DependentUpon>NewsDo_New.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Web\NewsInfoShow.aspx.designer.vb">
       <DependentUpon>NewsInfoShow.aspx</DependentUpon>

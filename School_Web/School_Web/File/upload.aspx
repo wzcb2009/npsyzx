@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" enableEventValidation="false" viewStateEncryptionMode="Never" enableViewStateMac="false"  AutoEventWireup="false" CodeFile="upload.aspx.vb" Inherits="Common_upload" %>
+﻿<%@ Page Language="VB" enableEventValidation="false" viewStateEncryptionMode="Never" enableViewStateMac="false"  AutoEventWireup="false" CodeBehind="upload.aspx.vb" Inherits="Web.Common_upload" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

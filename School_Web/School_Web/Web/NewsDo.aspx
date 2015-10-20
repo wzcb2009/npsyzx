@@ -1,1 +1,1 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" ValidateRequest="false" EnableViewStateMac="false" CodeFile="NewsDo.aspx.vb" Inherits="Web_NewsDo" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" ValidateRequest="false" EnableViewStateMac="false" CodeBehind="NewsDo.aspx.vb" Inherits="Web.Web_NewsDo" %>

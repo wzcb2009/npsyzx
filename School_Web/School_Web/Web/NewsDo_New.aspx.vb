@@ -1,7 +1,7 @@
 ﻿Imports Wzsckj.com.Common
 Imports StringHandling.DWZJson
 
-Public Class Web_NewsDo
+Public Class NewsDo_New
     Inherits System.Web.UI.Page
     Dim bll As New BLL.DataMainBLL
     Dim ap As New ActionPara
@@ -136,4 +136,5 @@ Public Class Web_NewsDo
         End If
         Return dm
     End Function
+
 End Class
