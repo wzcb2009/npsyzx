@@ -44,7 +44,7 @@ Namespace net.npsyzx.www
         '''<remarks/>
         Public Sub New()
             MyBase.New
-            Me.Url = My.MySettings.Default.Web_net_npsyzx_www_TokenService
+            Me.Url = Global.Web.My.MySettings.Default.Web_net_npsyzx_www_TokenService
             If (Me.IsLocalFileSystemWebService(Me.Url) = true) Then
                 Me.UseDefaultCredentials = true
                 Me.useDefaultCredentialsSetExplicitly = false
