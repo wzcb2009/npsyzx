@@ -108,7 +108,7 @@ Public Class UserLogindo
     End Function
     Function remotToken(username As String) As String
         Dim tokenService As New TokenService
-        tokenService.Url = "http://10.128.50.113/passport/TokenService.asmx"
+        'tokenService.Url = "http://10.128.50.113/passport/TokenService.asmx"
         Return tokenService.TokenInsert(username)
 
     End Function

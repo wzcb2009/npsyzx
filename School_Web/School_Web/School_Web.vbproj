@@ -82,13 +82,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\AspNetPager.dll</HintPath>
     </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LitJSON.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -2149,6 +2149,60 @@
     <Content Include="Themes\demo.css" />
     <Content Include="UC\UC_Newslist.ascx" />
     <Content Include="UC\UC_NewslistMore.ascx" />
+    <Content Include="Upfiles\2013112911123227881.jpg" />
+    <Content Include="Upfiles\2013112911123227881_s.jpg" />
+    <Content Include="Upfiles\2013112911131845021.jpg" />
+    <Content Include="Upfiles\2013112911131845021_s.jpg" />
+    <Content Include="Upfiles\2013112911132108417.jpg" />
+    <Content Include="Upfiles\2013112911132108417_s.jpg" />
+    <Content Include="Upfiles\2013112911133414263.jpg" />
+    <Content Include="Upfiles\2013112911133414263_s.jpg" />
+    <Content Include="Upfiles\2013112911134439804.jpg" />
+    <Content Include="Upfiles\2013112911134439804_s.jpg" />
+    <Content Include="Upfiles\201311291114247572.jpg" />
+    <Content Include="Upfiles\201311291114247572_s.jpg" />
+    <Content Include="Upfiles\2013112911144039188.jpg" />
+    <Content Include="Upfiles\2013112911144039188_s.jpg" />
+    <Content Include="Upfiles\201510314321649563.jpg" />
+    <Content Include="Upfiles\day_131129\201311291040074671.jpg" />
+    <Content Include="Upfiles\day_131129\201311291041421681.png" />
+    <Content Include="Upfiles\day_131129\201311291041518076.png" />
+    <Content Include="Upfiles\day_131129\20131129104157120.png" />
+    <Content Include="Upfiles\day_131129\201311291042049023.png" />
+    <Content Include="Upfiles\day_131129\201311291042551067.jpg" />
+    <Content Include="Upfiles\day_131129\201311291043043716.jpg" />
+    <Content Include="Upfiles\day_131129\20131129104528120.jpg" />
+    <Content Include="Upfiles\day_131129\20131129104528120_s.jpg" />
+    <Content Include="Upfiles\day_131129\20131129104539900.jpg" />
+    <Content Include="Upfiles\day_131129\201311291045452852.jpg" />
+    <Content Include="Upfiles\day_131129\201311291047016681.jpg" />
+    <Content Include="Upfiles\day_131129\201311291047016681_s.jpg" />
+    <Content Include="Upfiles\day_131129\20131129104707701.jpg" />
+    <Content Include="Upfiles\day_131129\201311291047272952.jpg" />
+    <Content Include="Upfiles\day_131129\20131129104755634.jpg" />
+    <Content Include="Upfiles\day_131129\201311291049068234.jpg" />
+    <Content Include="Upfiles\day_131129\201311291049068234_s.jpg" />
+    <Content Include="Upfiles\day_131129\201311291050414197.jpg" />
+    <Content Include="Upfiles\day_131129\201311291051223408.jpg" />
+    <Content Include="Upfiles\day_131129\201311291051223408_s.jpg" />
+    <Content Include="Upfiles\day_150421\201504210259553550.jpg" />
+    <Content Include="Upfiles\day_150421\201504210300118574.jpg" />
+    <Content Include="Upfiles\day_150421\201504210300219239.jpg" />
+    <Content Include="Upfiles\day_150421\201504210301185277.jpg" />
+    <Content Include="Upfiles\day_150421\201504210301327312.jpg" />
+    <Content Include="Upfiles\day_150421\201504210301486507.jpg" />
+    <Content Include="Upfiles\day_150421\2015042103031512.jpg" />
+    <Content Include="Upfiles\day_150421\201504210303396988.jpg" />
+    <Content Include="Upfiles\day_150421\201504210303587279.jpg" />
+    <Content Include="Upfiles\day_150421\201504210305551265.jpg" />
+    <Content Include="Upfiles\day_150421\201504210306212669.jpg" />
+    <Content Include="Upfiles\day_150421\201504210306286216.jpg" />
+    <Content Include="Upfiles\day_150421\201504210307128475.jpg" />
+    <Content Include="Upfiles\day_150421\201504210307212237.jpg" />
+    <Content Include="Upfiles\day_150421\201504210307292478.jpg" />
+    <Content Include="Upfiles\day_150421\201504210310145252.jpg" />
+    <Content Include="Upfiles\day_150421\201504210310272162.jpg" />
+    <Content Include="Upfiles\day_150421\201504210340002919.jpg" />
     <Content Include="userexit.aspx" />
     <Content Include="UserFace.aspx" />
     <Content Include="userHwdo.aspx" />
@@ -2185,10 +2239,12 @@
     <Content Include="kindeditor\php\upload_json.php" />
     <None Include="My Project\PublishProfiles\配置文件1.pubxml" />
     <None Include="README.md" />
-    <Content Include="Web References\net.npsyzx.www\Reference.map">
+    <None Include="Upfiles\201542115421015526.doc" />
+    <None Include="Upfiles\day_150421\201504210341223932.doc" />
+    <None Include="Web References\net.npsyzx.www\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
-    </Content>
+    </None>
     <None Include="Web References\net.npsyzx.www\TokenService.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -3112,6 +3168,7 @@
     <Folder Include="kindeditor\attached\" />
     <Folder Include="Service References\" />
     <Folder Include="Themes\Images\" />
+    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.vbproj">
@@ -3143,6 +3200,9 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <WebReferenceUrl Include="http://127.0.0.1/passport/TokenService.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\net.npsyzx.www\</RelPath>
@@ -3154,9 +3214,6 @@
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Web_net_npsyzx_www_TokenService</CachedSettingsPropName>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

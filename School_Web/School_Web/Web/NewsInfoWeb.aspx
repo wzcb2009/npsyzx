@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="NewsInfoWeb.aspx.vb" Inherits="Web.NewsAddWeb" %>
 
-
 <script src="../Admin/js/formsubmit.js"></script>
 <script src="../File/FileHandle.js"></script>
 <head>
@@ -24,9 +23,6 @@
         }
 
     </script>
-
-    
-   
     <link href="../kindeditor/plugins/code/prettify.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../kindeditor/kindeditor-min.js"></script>
     <script src="../kindeditor/lang/zh_CN.js" type="text/javascript"></script>
@@ -76,95 +72,81 @@
         });
     </script>--%>
 </head>
-
-<h2 class="contentTitle">网站信息</h2>
-
-
+<h2 class="contentTitle">
+    网站信息</h2>
 <div class="pageContent" layouth="78">
-
-    <form id="form1" runat="server" method="post" action="../web/newsdo.aspx" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
-        <asp:hiddenfield id="Hd_action" runat="server"></asp:hiddenfield>
-        <asp:hiddenfield id="hd_caseid" runat="server"></asp:hiddenfield>
-        <asp:hiddenfield id="hd_id" runat="server"></asp:hiddenfield>
-        <asp:hiddenfield id="hd_objid" runat="server"></asp:hiddenfield>
-
-        <div class=" pageFormContent2">
+    <form id="form1" runat="server" method="post" action="../web/newsdo.aspx" class="pageForm required-validate"
+    onsubmit="return validateCallback(this, navTabAjaxDone)">
+    <asp:hiddenfield id="Hd_action" runat="server"></asp:hiddenfield>
+    <asp:hiddenfield id="hd_caseid" runat="server"></asp:hiddenfield>
+    <asp:hiddenfield id="hd_id" runat="server"></asp:hiddenfield>
+    <asp:hiddenfield id="hd_objid" runat="server"></asp:hiddenfield>
+    <div class=" pageFormContent2">
+        <dl>
+            <dt>标题：</dt>
+            <dd>
+                <asp:textbox id="txt_title" runat="server" size="30" cssclass="required"></asp:textbox>
+            </dd>
+        </dl>
+        <dl>
+            <dt>审核通过 </dt>
+            <dd>
+                <asp:checkbox id="chk_Status" checked="true" runat="server" text="" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>加密</dt>
+            <dd>
+                <asp:checkbox id="chk_right" runat="server" text="" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>推荐</dt>
+            <dd>
+                <asp:checkbox id="chk_cmd" runat="server" text="" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>作者</dt>
+            <dd>
+                <asp:textbox id="txt_author" runat="server" width="50px"></asp:textbox>
+            </dd>
+        </dl>
+        <dl>
+            <dt>浏览次数</dt>
+            <dd>
+                <asp:textbox id="txt_BrowCount" runat="server" text="0" width="50px"></asp:textbox>
+            </dd>
+        </dl>
+        <dl>
+            <dt>排序</dt>
+            <dd>
+                <asp:textbox id="txt_pindex" runat="server" text="1000" width="50px"></asp:textbox>
+            </dd>
+        </dl>
+        <dl>
+            <dt>上传日期</dt>
+            <dd>
+                <asp:textbox id="txt_pubdate" runat="server" width="80px"></asp:textbox>
+            </dd>
+        </dl>
+        <div style="clear: both">
+        </div>
+        <div>
             <dl>
-                <dt>标题：</dt>
+                <dt>复制到</dt>
                 <dd>
-                    <asp:textbox id="txt_title" runat="server" size="30" cssclass="required"></asp:textbox>
+                    <asp:checkbox runat="server" id="xykx" value="107" text=""></asp:checkbox>
+                    校园快讯
                 </dd>
             </dl>
-            <dl>
-                <dt>审核通过
-                </dt>
-                <dd>
-                    <asp:checkbox id="chk_Status" checked="true" runat="server" text="" />
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>加密</dt>
-                <dd>
-                    <asp:checkbox id="chk_right" runat="server" text="" />
-
-                </dd>
-            </dl>
-            <dl>
-                <dt>推荐</dt>
-                <dd>
-                    <asp:checkbox id="chk_cmd" runat="server" text="" />
-                </dd>
-            </dl>
-            <dl>
-                <dt>作者</dt>
-                <dd>
-                    <asp:textbox id="txt_author" runat="server" width="50px"></asp:textbox>
-                </dd>
-            </dl>
-            <dl>
-                <dt>浏览次数</dt>
-                <dd>
-                    <asp:textbox id="txt_BrowCount" runat="server" text="0" width="50px"></asp:textbox>
-                </dd>
-            </dl>
-            <dl>
-                <dt>排序</dt>
-                <dd>
-                    <asp:textbox id="txt_pindex" runat="server" text="1000" width="50px"></asp:textbox>
-                </dd>
-            </dl>
-            <dl>
-                <dt>上传日期</dt>
-                <dd>
-                    <asp:textbox id="txt_pubdate" runat="server" width="80px"></asp:textbox>
-                </dd>
-            </dl>
-
-            <div style="clear: both"></div>
-
-            <div>
-                <dl>
-                    <dt>复制到</dt>
-                    <dd>
-
-                        <asp:checkbox runat="server" id="xykx" value="107" text=""></asp:checkbox>
-                        校园快讯
-                 
-
-                    </dd>
-                </dl>
-
-
-            </div>
-
-            <div style="clear: both">
-            </div>
-            <div style="width: 100%">
-                <%--<asp:TextBox id="content" name="txt_content" TextMode="MultiLine" runat="server"></asp:TextBox>--%>
-                <%--<script id="editor" name="txt_content"    type="text/plain" style="width:1024px;height:500px;""><%=art_content%></script>--%>
-            </div>
-            <textarea id="content" name="content" class="kindeditor" style="width: 100%; height: 500px;">
+        </div>
+        <div style="clear: both">
+        </div>
+        <div style="width: 100%">
+            <%--<asp:TextBox id="content" name="txt_content" TextMode="MultiLine" runat="server"></asp:TextBox>--%>
+            <%--<script id="editor" name="txt_content"    type="text/plain" style="width:1024px;height:500px;""><%=art_content%></script>--%>
+            <textarea id="content" name="content" class="kindeditor" rows="22" cols="120">
                  <asp:literal id="lt_content" runat="server"></asp:literal>
             </textarea>
             <%--<textarea id="editor"   class="editor" name="txt_content" rows="22" cols="100"  type="text/plain">
@@ -180,39 +162,24 @@
 	            <asp:literal id="lt_content" runat="server"></asp:literal>
 	           
 					</textarea> --%>
-
-
-
-
-
-
-            <div id="filesinput">
-                <asp:literal id="lt_fileinput" runat="server"></asp:literal>
-
-            </div>
-
-            <div style="margin: 10px">
-            </div>
-            <div class="divider"></div>
-
-
         </div>
-
-
+        <div id="filesinput">
+            <asp:literal id="lt_fileinput" runat="server"></asp:literal>
+        </div>
+        <div style="margin: 10px">
+        </div>
+        <div class="divider">
+        </div>
+    </div>
     </form>
 
-
-   
-    <div style="margin: 0 10px">
-        <div style="float: left; width: 450px;">
-            <div style="height: 10px;"></div>
-            <input id="testFileInput<%=Now.ToFileTime%>" type="file" name="filedata"
-                auto="true"
-                uploader="uploadify/scripts/uploadify.swf"
-                buttonimg="uploadify/Img/add.jpg"
-                cancelimg="uploadify/cancel.png"
-                script="../file/upload.aspx"
-                scriptdata="{'ASPSESSID': '<%= Session.SessionID %>', 'AUTHID': '<% 
+<div style="margin: 0 10px">
+    <div style="float: left; width: 450px;">
+        <div style="height: 10px;">
+        </div>
+        <input id="testFileInput<%=Now.ToFileTime%>" type="file" name="filedata" auto="true"
+            uploader="uploadify/scripts/uploadify.swf" buttonimg="uploadify/Img/add.jpg"
+            cancelimg="uploadify/cancel.png" script="../file/upload.aspx" scriptdata="{'ASPSESSID': '<%= Session.SessionID %>', 'AUTHID': '<% 
                 Dim c As HttpCookie
                 c = Request.Cookies(FormsAuthentication.FormsCookieName)
                 If c Is Nothing Then
@@ -220,26 +187,21 @@
                 Else
                     Response.Write(Request.Cookies(FormsAuthentication.FormsCookieName).Value)
                 End If
-    %>' ,'pindex':'0','projectid':'0','parentid':'<%=Request.QueryString("id")%>'}"
-                filequeue="fileQueue"
-                fileext="*.jpg;*.jpeg;*.gif;*.png;*.doc;*.docx;*.pdf;*.rar;*.zip"
-                filedesc="*.jpg;*.jpeg;*.gif;*.png;*.doc;*.docx;*.pdf;*.rar;*.zip" />
-            <div id="fileQueue" class="fileQueue"></div>
-        </div>
-        <div style="float: left; width: 470px;">
-
-            <ul class="filelist">
-                <asp:literal runat="server" id="lt_files"></asp:literal>
-            </ul>
+    %>' ,'pindex':'0','projectid':'0','parentid':'<%=Request.QueryString("id")%>'}" filequeue="fileQueue"
+            fileext="*.jpg;*.jpeg;*.gif;*.png;*.doc;*.docx;*.pdf;*.rar;*.zip" filedesc="*.jpg;*.jpeg;*.gif;*.png;*.doc;*.docx;*.pdf;*.rar;*.zip" />
+        <div id="fileQueue" class="fileQueue">
         </div>
     </div>
-
-
+    <div style="float: left; width: 470px;">
+        <ul class="filelist">
+            <asp:literal runat="server" id="lt_files"></asp:literal>
+        </ul>
+    </div>
+</div>
 </div>
 <div class="formBar">
     <ul>
         <li><a class="buttonActive" href="javascript:tj(0);"><span>保存</span></a></li>
         <li><a class="buttonActive" href="javascript:tj(-1);"><span>取消</span></a></li>
-
     </ul>
 </div>

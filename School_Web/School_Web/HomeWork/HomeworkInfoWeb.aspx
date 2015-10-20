@@ -74,12 +74,12 @@
             </dl>
 
             <div style="clear: both"></div>
-            <textarea  class="editor" name="txt_content" rows="12" cols="100"
+            <%--<textarea  class="editor" name="txt_content" rows="12" cols="100"
 								upLinkUrl="../web/upload.aspx" upLinkExt="zip,rar,txt" 
 								upImgUrl="../web/upload.aspx" upImgExt="jpg,jpeg,gif,png" 
 								upFlashUrl="../web/upload.aspx" upFlashExt="swf"
-								upMediaUrl="../web/upload.aspx" upMediaExt:"avi">
-
+								upMediaUrl="../web/upload.aspx" upMediaExt:"avi">--%>
+<textarea id="content" name="content" class="kindeditor" rows="22" cols="120">
 		           
 			<asp:literal id="lt_content" runat="server"></asp:literal>		</textarea> 
       
